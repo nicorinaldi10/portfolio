@@ -727,11 +727,9 @@ section,
   height: 10px;
 }
 
-.skills .progress-bar {
-  width: calc(attr(aria-valuenow) * 1%); /* Usa el valor del HTML */
-  height: 10px;
-  transition: width 0.9s ease-in-out;
-  background-color: var(--accent-color, blue); /* Si la variable no está definida, usa azul */
+.skills .progress-bar[data-value="100"] { width: 100%; }
+.skills .progress-bar[data-value="80"] { width: 80%; }
+.skills .progress-bar[data-value="70"] { width: 70%; }
 
 
 
