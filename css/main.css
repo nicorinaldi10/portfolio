@@ -728,11 +728,12 @@ section,
 }
 
 .skills .progress-bar {
-  width: 1px;
+  width: calc(attr(aria-valuenow) * 1%); /* Usa el valor del HTML */
   height: 10px;
-  transition: 0.9s;
-  background-color: var(--accent-color);
+  transition: width 0.9s ease-in-out;
+  background-color: var(--accent-color, blue); /* Si la variable no está definida, usa azul */
 }
+
 
 /*--------------------------------------------------------------
 # Resume Section
