@@ -226,4 +226,11 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+  document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".progress-bar").forEach(el => {
+          let value = el.getAttribute("aria-valuenow");
+          el.style.width = value + "%";
+      });
+  });
+
 })();
