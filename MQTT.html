@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Project MQTT</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="vendor/aos/aos.css" rel="stylesheet">
+  <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="img/my-profile-img.jpeg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="/img/logo.png" alt=""> -->
+      <h1 class="sitename">Nicolás Rinaldi</h1>
+    </a>
+
+    <div class="social-links text-center">      
+      <a href="https://www.linkedin.com/in/nicolás-rinaldi-montes-150b49250" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <a href="mailto:albertonicolasrinaldi@gmail.com" class="email-link"><i class="bi bi-envelope flex-shrink-0"></i></a>
+      <a href="https://github.com/nicorinaldi10" class="github"><i class="bi bi-github"></i></a>
+      <a href="https://www.researchgate.net/profile/Nicolas-Montes-11?ev=hdr_xprf" class="rg-icon">
+        <svg class="rg-svg" width="20" height="20" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M 5 5 L 5 27 L 27 27 L 27 5 L 5 5 z M 7 7 L 25 7 L 25 25 L 7 25 L 7 7 z M 19.164062 10.001953 C 17.881062 10.001953 17.441406 10.919156 17.441406 11.535156 L 17.441406 13.169922 C 17.441406 13.999922 17.8935 14.792969 19.0625 14.792969 C 21.0245 14.790969 20.787109 13.306391 20.787109 12.275391 L 19.253906 12.275391 L 19.253906 12.816406 L 20.158203 12.816406 C 20.158203 13.621406 19.781453 14.162109 19.064453 14.162109 C 18.498453 14.162109 18.171875 13.671188 18.171875 12.992188 L 18.171875 11.634766 C 18.171875 11.005766 18.762062 10.642578 19.164062 10.642578 C 19.881062 10.642578 20.15625 11.271484 20.15625 11.271484 L 20.697266 10.90625 C 20.697266 10.90625 20.434062 10.001953 19.164062 10.001953 z M 13.583984 13.091797 C 12.678984 13.091797 11.296953 13.178906 10.001953 13.128906 L 10.001953 13.53125 C 10.781953 13.68225 11.107422 13.606281 11.107422 14.738281 L 11.107422 20.269531 C 11.107422 21.413531 10.780953 21.325563 10.001953 21.476562 L 10.001953 21.892578 C 10.378953 21.879578 11.031266 21.841797 11.697266 21.841797 C 12.326266 21.841797 13.144094 21.867578 13.496094 21.892578 L 13.496094 21.476562 C 12.490094 21.338562 12.1875 21.451531 12.1875 20.269531 L 12.1875 17.931641 C 12.5275 17.956641 12.817531 17.955078 13.269531 17.955078 C 14.124531 19.489078 14.94125 20.634781 15.40625 21.175781 C 16.24825 22.193781 17.594875 22.043578 17.921875 21.892578 L 17.921875 21.515625 C 17.418875 21.514625 16.914781 21.175437 16.550781 20.773438 C 15.934781 20.107437 15.104781 19.025641 14.425781 17.806641 C 15.557781 17.529641 16.400391 16.461297 16.400391 15.404297 C 16.400391 13.820297 15.179984 13.091797 13.583984 13.091797 z M 13.320312 13.730469 C 14.502313 13.730469 15.205078 14.346516 15.205078 15.478516 C 15.204078 16.586516 14.450359 17.326172 13.193359 17.326172 C 12.728359 17.326172 12.5145 17.314063 12.1875 17.289062 L 12.1875 13.767578 C 12.5145 13.729578 12.942312 13.730469 13.320312 13.730469 z"/>
+        </svg>
+      </a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+    
+
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">IoT and the MQTT Protocol</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">IoT & MQTT</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+        </div>
+        <div class="row gy-12">          
+          <div class="col-lg-12">
+              <ul>
+                <li><strong>Level</strong>: Small project</li>
+                <li><strong>GitHub Repository:</strong> --</li> 
+                <li><strong>Grade</strong>: 9/10</li>
+              </ul>      
+         
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h11>What is IoT and the MQTT Protocol?</h11> 
+              <br>
+              <br>
+              <p>The <b>IoT (Internet of Things)</b> refers to the interconnection of devices through the internet to collect and share data in real time. One of the most widely used protocols in IoT is <b>MQTT (Message Queuing Telemetry Transport)</b>, a lightweight and efficient messaging protocol designed for communication between devices with limited bandwidth and resources.</p>
+
+              <p>In this case, the server is supported by <b>Mosquitto</b>, an <b>MQTT broker</b> that acts as an intermediary in the <b>publish-subscribe</b> model, managing message delivery efficiently and ensuring that data reaches clients subscribed to a specific topic. Due to its lightweight nature and compatibility with multiple platforms, Mosquitto is ideal for testing and deploying in local or cloud environments, enabling reliable communication in applications such as home automation, industry, healthcare, and transportation.</p>
+
+
+                 <br>
+    
+              <strong>Publisher and Subscriber:</strong> <br>
+
+              <br>
+              <p>A <b>publisher</b> is a device or application that sends messages to a specific topic, while a <b>subscriber</b> is a device or application that listens to those messages by subscribing to the topic. 
+                In this case, two windows will be opened: one acting as the subscriber and the other as the publisher.</p>
+
+              <p>This is achieved using the following commands: <b>“.\mosquitto_sub.exe -d -t /[name]”</b> for the subscriber and <b>“.\mosquitto_pub.exe -d -t /[name] -m [message]”</b> for the publisher.</p>
+
+              <br>
+
+              
+                  <div class="d-flex justify-content-center">
+                    <img src="img/portfolio/subs.jpg" alt="Imagen" width="800" height="300">
+                  </div> <br>
+
+                  <br>
+
+                  <div class="d-flex justify-content-center">
+                    <img src="img/portfolio/pub.jpg" alt="Imagen" width="800" height="300">
+                  </div> <br>
+
+                  <br>
+    
+              <strong> Communication between computer and smartphone:</strong> <br>
+
+              <br>
+
+              <p>Both applications, <b>IoTMQTTPanel</b> (Android) and <b>MQTTool</b> (iOS), function in a similar manner. To begin, the IP address, topic, and port must be specified (it may be necessary to "open" it beforehand) before establishing the connection.</p>
+
+              <p>On Android, it is necessary to implement message sending and receiving panels while also specifying the topic, whereas on iOS, these options are already built-in.</p> 
+
+              <br>
+              
+
+              <div class="d-flex justify-content-center gap-3">
+                <img src="img/portfolio/mqtt_1.jpg" alt="Imagen 1" width="500" height="400">
+                <img src="img/portfolio/mqtt_2.jpg" alt="Imagen 2" width="700" height="350">
+            </div> <br>
+
+            <br>
+
+            <p>Once this is done, messages can be sent between devices, functioning as either a <b>publisher</b> or a <b>subscriber</b>.</p>
+            
+            <br>
+
+                  <div class="d-flex justify-content-center">
+                    <img src="img/portfolio/mqtt_4.jpg" alt="Imagen" width="1000" height="100">
+                  </div> <br>
+
+                  <br>
+
+                  <div class="d-flex justify-content-center">
+                    <img src="img/portfolio/mqtt_3.jpg" alt="Imagen" width="700" height="100">
+                  </div> <br>
+
+                  <br>
+
+
+              <strong> Connection using HiveMQ:</strong> <br>
+
+              <br>
+
+              <p>Using the <b>IoT MQTT Panel</b> application for Android and <b>MQTT Box</b> (a Google Chrome extension), we can establish a connection through a remote server. To do this, both applications are configured using the broker address provided on the <b>HiveMQ</b> website.</p>
+
+              <br>
+
+                  <div class="d-flex justify-content-center">
+                    <img src="img/portfolio/mqtt_5.jpg" alt="Imagen" width="900" height="400">
+                  </div> <br>
+
+              <br>
+
+
+              <p>Next, a text panel is added from the smartphone, using the previously created topic from <b>MQTT Box</b>. Once it is created and successfully connected, the status will be notified in the topic window of <b>IoT MQTT Panel</b>.</p>
+
+              <br>
+
+
+
+              <div class="d-flex justify-content-center">
+                <img src="img/portfolio/mqtt_6.jpg" alt="Imagen 1" width="300" height="100">
+              </div> <br>
+
+              <div class="d-flex justify-content-center">
+              <img src="img/portfolio/mqtt_7.jpg" alt="Imagen 2" width="300" height="500">
+              </div> <br>
+
+              <br>
+
+          <p>Once this is done, a message is sent from the smartphone and received in <b>IoT MQTT Panel</b>:</p>
+
+          <br>
+
+          <div class="d-flex justify-content-center">
+            <img src="img/portfolio/mqtt_8.jpg" alt="Imagen 1" width="300" height="150">
+          </div> <br>
+
+          <div class="d-flex justify-content-center">
+          <img src="img/portfolio/mqtt_9.jpg" alt="Imagen 2" width="500" height="450">
+          </div> <br>
+
+
+
+          <strong> Thingspeak:</strong> <br>
+
+            <br>
+
+            <p>Next, a data collection channel is created on the <b>ThingSpeak</b> platform. This can be done using the previously mentioned <b>MQTT Box</b> application or <b>MQTT.fx</b>. In this case, we will use a different application for each channel variable.</p>
+
+            <p>The channel is created in <b>ThingSpeak</b> by navigating to <b>Channel > New Channel</b> and entering each variable in its respective field.</p>
+
+            <p>First, <b>MQTT.fx</b> is configured using data such as the <b>API keys</b> obtained from the ThingSpeak channel itself.</p> <br>
+
+            <div class="d-flex justify-content-center">
+              <img src="img/portfolio/mqtt_10.jpg" alt="Imagen 2" width="600" height="350">
+            </div> <br>
+
+            <p>Using the command <b>channels/&lt;channel ID&gt;/fields/field&lt;field number&gt;/&lt;API key&gt;</b>, the connection to the ThingSpeak channel is established.</p>
+
+            <p>In the next line of code, the variable value is set. As the value changes, it will reflect its evolution over time.</p> <br>
+
+            <div class="d-flex justify-content-center">
+              <img src="img/portfolio/mqtt_11.jpg" alt="Imagen 2" width="600" height="150">
+            </div> <br>
+
+            <p>Finally, a <b>publisher</b> is configured in <b>IoT MQTT Panel</b> in a similar manner to the previous step. Both <b>temperature</b> and <b>humidity</b> reflect the introduced variations.</p>
+
+            <div class="d-flex justify-content-center">
+              <img src="img/portfolio/mqtt_12.jpg" alt="Imagen 2" width="250" height="300">
+            </div> <br>
+
+            <div class="d-flex justify-content-center">
+              <img src="img/portfolio/mqtt_13.jpg" alt="Imagen 2" width="500" height="250">
+            </div> <br>
+
+          <br>
+
+          <strong> Subscriptions in HiveMQ: </strong> <br>
+
+          <br>
+
+          <p>Similarly to <b>Section 2</b>, it is possible to subscribe to already created topics as well as publish to others.</p>
+
+          <br>
+
+          <div class="d-flex justify-content-center">
+            <img src="img/portfolio/mqtt_14.jpg" alt="Imagen 2" width="600" height="300">
+          </div> <br>
+
+          <br>
+
+          <div class="d-flex justify-content-center">
+            <img src="img/portfolio/mqtt_15.jpg" alt="Imagen 2" width="600" height="290">
+          </div> <br>
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/php-email-form/validate.js"></script>
+  <script src="vendor/aos/aos.js"></script>
+  <script src="vendor/typed.js/typed.umd.js"></script>
+  <script src="vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
