@@ -1249,6 +1249,11 @@ p {
   width: auto; /* Mantiene la proporción */
 }
 
+.img-turtlebot {
+  margin-left: 200px; /* Ajusta según sea necesario */
+}
+
+
 
 /*--------------------------------------------------------------
 # Starter Section Section
