@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Projects - Image Segmentation</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="vendor/aos/aos.css" rel="stylesheet">
+  <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="img/my-profile-img.jpeg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="/img/logo.png" alt=""> -->
+      <h1 class="sitename">Nicolás Rinaldi</h1>
+    </a>
+
+    <div class="social-links text-center">      
+      <a href="https://www.linkedin.com/in/nicolás-rinaldi-montes-150b49250" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <a href="mailto:albertonicolasrinaldi@gmail.com" class="email-link"><i class="bi bi-envelope flex-shrink-0"></i></a>
+      <a href="https://github.com/nicorinaldi10" class="github"><i class="bi bi-github"></i></a>
+      <a href="https://www.researchgate.net/profile/Nicolas-Montes-11?ev=hdr_xprf" class="rg-icon">
+        <svg class="rg-svg" width="20" height="20" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M 5 5 L 5 27 L 27 27 L 27 5 L 5 5 z M 7 7 L 25 7 L 25 25 L 7 25 L 7 7 z M 19.164062 10.001953 C 17.881062 10.001953 17.441406 10.919156 17.441406 11.535156 L 17.441406 13.169922 C 17.441406 13.999922 17.8935 14.792969 19.0625 14.792969 C 21.0245 14.790969 20.787109 13.306391 20.787109 12.275391 L 19.253906 12.275391 L 19.253906 12.816406 L 20.158203 12.816406 C 20.158203 13.621406 19.781453 14.162109 19.064453 14.162109 C 18.498453 14.162109 18.171875 13.671188 18.171875 12.992188 L 18.171875 11.634766 C 18.171875 11.005766 18.762062 10.642578 19.164062 10.642578 C 19.881062 10.642578 20.15625 11.271484 20.15625 11.271484 L 20.697266 10.90625 C 20.697266 10.90625 20.434062 10.001953 19.164062 10.001953 z M 13.583984 13.091797 C 12.678984 13.091797 11.296953 13.178906 10.001953 13.128906 L 10.001953 13.53125 C 10.781953 13.68225 11.107422 13.606281 11.107422 14.738281 L 11.107422 20.269531 C 11.107422 21.413531 10.780953 21.325563 10.001953 21.476562 L 10.001953 21.892578 C 10.378953 21.879578 11.031266 21.841797 11.697266 21.841797 C 12.326266 21.841797 13.144094 21.867578 13.496094 21.892578 L 13.496094 21.476562 C 12.490094 21.338562 12.1875 21.451531 12.1875 20.269531 L 12.1875 17.931641 C 12.5275 17.956641 12.817531 17.955078 13.269531 17.955078 C 14.124531 19.489078 14.94125 20.634781 15.40625 21.175781 C 16.24825 22.193781 17.594875 22.043578 17.921875 21.892578 L 17.921875 21.515625 C 17.418875 21.514625 16.914781 21.175437 16.550781 20.773438 C 15.934781 20.107437 15.104781 19.025641 14.425781 17.806641 C 15.557781 17.529641 16.400391 16.461297 16.400391 15.404297 C 16.400391 13.820297 15.179984 13.091797 13.583984 13.091797 z M 13.320312 13.730469 C 14.502313 13.730469 15.205078 14.346516 15.205078 15.478516 C 15.204078 16.586516 14.450359 17.326172 13.193359 17.326172 C 12.728359 17.326172 12.5145 17.314063 12.1875 17.289062 L 12.1875 13.767578 C 12.5145 13.729578 12.942312 13.730469 13.320312 13.730469 z"/>
+        </svg>
+      </a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+    
+
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Impact of Using Different Color Spaces on Medical Image Segmentation <br> for Detecting Cancerous Cells </h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Image Segmentation</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+        </div>
+        <div class="row gy-12">          
+          <div class="col-lg-12">
+              <ul>
+                <li><strong>Level</strong>: Medium project (University Final Project)</li>
+                <li><strong>GitHub Repository:</strong> --</li> 
+                <li><strong>Grade</strong>: 9/10</li>
+              </ul>      
+         
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h11>What is the Impact of Using Different Color Spaces
+                on Medical Image Segmentation for
+                Detecting Cancerous Cells
+                ?</h11> 
+              <br>
+              <br>
+              <p>The paper “Impact of Using Different Color Spaces on the Image Segmentation” establishes a
+                comparison between RGB, YCbCr, XYZ and HSV color segmentation for different clustering
+                methods: k-means, Fuzzy C-means, Region growing, and Graph Cut. The aim of the new
+                project is to apply a similar study in medical imaging, more specifically in tissues with cancer cells. To do this, images with alcian blue-stained cancerous tissues will be evaluated and
+                clustered for better interpretation by the doctor, or even for automated diagnosis applications.</p>
+                
+                
+                <p>The segmentation method used will be k-means (in <strong>RGB</strong>, <strong>HSV</strong> and and <strong>Lab</strong>), due to the feasibility of its manual implementation, applied to medical images of carcinomas stained with the agent “alcian blue”.
+                The aim of the project is to achieve a well-defined segmentation between the different shades
+                of the image, thus extracting the cancerous tissue (dyed dark blue).</p>
+
+                 <br>
+    
+                 <div class="d-flex justify-content-center"> 
+                  <img src="img/portfolio/rgb1.jpg" alt="Imagen" width="600" height="450">
+                </div> <br>
+            
+                <br>
+
+
+                The k-means segmentation will be evaluated in three different color spaces which are explained
+                as it follows. <br>
+
+                <br>
+
+                <strong>RGB</strong>
+
+                <br>
+
+                Red Blue Green space, the most common representation of colors, each channel stands for one
+                primary color, and the color is expressed as a vector of three terms. This vector of three terms
+                can be placed in a Cartesian space with three axes, forming a single point for each color. <br>
+                
+                <br>
+
+                <div class="d-flex justify-content-center"> 
+                  <img src="img/portfolio/rgb2.jpg" alt="Imagen" width="430" height="200">
+                </div> <br>
+
+
+                Knowing that an RGB image is a matrix of dimensions (height, width, 3), we can represent
+                each of the pixels of this matrix in a three-dimensional Cartesian graphic in the same way as
+                indicated above.
+
+                <br>
+
+                <strong>HSV</strong>
+
+                <br>
+
+                HSV stands for Hue Saturation and Value, we can express an RGB vector in HSV by applying a
+                simple cylindrical coordinate change. In this case the “caps” of the cylinder represent black and
+                white, the hue is a function of the theta angle and the color value is a function of the radius. In
+                the same way as in RGB space, an HSV image can be represented three-dimensionally through
+                its pixels in a three-dimensional system. <br>
+
+                <br>
+
+                <div class="d-flex justify-content-center"> 
+                  <img src="img/portfolio/rgb3.jpg" alt="Imagen" width="200" height="150">
+                </div> <br>
+
+
+                <strong>Lab</strong>
+
+                <br>
+
+                In this case L stands for Lightness and the other two letters are two values that locates the color
+                between green and red (a) and blue and yellow (b). Even if the volume is a sphere, n this
+                case the transformation from RGB to Lab is not trivial, but it still can be represented in a three
+                dimensional cartesian space.
+
+                <br>
+
+                <div class="d-flex justify-content-center"> 
+                  <img src="img/portfolio/rgb4.jpg" alt="Imagen" width="400" height="360">
+                </div> <br>
+
+                The following are the representations of the pixels in the different color spaces, you can see how
+                each one of them represents a shape (cube, cylinder, sphere).
+
+                <br>
+
+                <div class="d-flex justify-content-center"> 
+                  <img src="img/portfolio/rgb5.jpg" alt="Imagen" width="1200" height="280">
+                </div> <br>
+
+                <br>
+
+              <strong>Method:</strong> <br>
+
+
+              <p>The selected method to work with was <strong>k-means clustering</strong>, which is an unsupervised clustering algorithm that 
+                organizes data into k groups according to their characteristics. It works by first choosing k initial centroids randomly and assigning 
+                each data point to the nearest centroid, forming the initial clusters. It then recalculates the centroids as the average of the points 
+                in each cluster and reassigns the points to the new centroids. This process is repeated iteratively until the assignments do not change 
+                or a maximum number of iterations is reached. The objective is to minimize the sum of the squared distances between the points and their 
+                centroids, thus optimizing homogeneity within the clusters.</p> <p>In this case the number of clusters was three, but the centroids were 
+                not chosen randomly. The image was converted to grayscale and the brightest, the darkest and the intermediate pixel were searched, assigning
+                a centroid to each one.</p> <p>After this, the code represents each pixel in a 3D space, [R G B] = [x y z], and calculates the distance of 
+                each pixel to the centroid of each cluster:</p> 
+
+
+              <br>
+
+              <script type="text/javascript" async
+              src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+              </script>
+
+              <div class="d-flex justify-content-center">
+              <p>
+                  \( d = \sqrt{(x_1^2 - x_c^2) + (y_1^2 - y_c^2) + (z_1^2 - z_c^2)} \)
+              </p>
+              </div>
+
+              <br>
+
+                
+                <p>After this every pixel is 
+                assigned to the closest cluster, then the new centers of clusters algorithm is executed again and keeps iterating until the clusters centers do 
+                not change between two consecutive iterations (or the change is under a threshold). What this achieves is a color segmentation involving all three channels. 
+                The darkest cluster will be the one corresponding to the cancerous mass, knowing this, the new segmented image is displayed.</p> <p>The method has been 
+                implemented in MATLAB, in the attached code (last pages) you can see in more detail the insights of the algorithm. There is an RGB section, an HSV
+                section and a Lab section, in which the image is transformed to the desired color space, clustering is carried out and then the segmented image is synthesized again for later display.</p>
+
+                <br>
+
+                <div class="d-flex justify-content-center"> 
+                  <img src="img/portfolio/rgb6.jpg" alt="Imagen" width="800" height="800">
+                </div> <br>
+
+
+                <p>Finally, the pixels identified as cancerous tissue are compared with the ground truth data and
+                  the Mean Square Error and a confusion matrix (that identifies true positives, true negatives,
+                  false positives and false negatives) are obtained.
+                </p>
+              
+              <br>
+
+              <strong>Dataset: </strong>
+
+              <br>
+
+              <p>The used data come from CAMELYON17, which is an international challenge focused on the
+                development of algorithms to detect and classify breast cancer metastases in histological lymph
+                node images.</p>
+
+
+              <p>The problem is that such lesions cannot be identified by color clustering alone, so we selected
+                images from the dataset that did share similarity with images of carcinomas stained by alcian
+                blue, and simulated the ground truth data for subsequent comparison and calculation of metrics. The results were synthesized by hand selecting the contours of interest with the QuPath
+                program and adding red annotations. Subsequently, the red channel was filtered from MATLAB to obtain the simulated affected pixels. Due to the fact that this is a long and difficult
+                procedure, the dataset is only going to contain 8 images.</p>
+
+              <br>
+
+
+              <div class="d-flex justify-content-center"> 
+                <img src="img/portfolio/rgb7.jpg" alt="Imagen" width="800" height="200">
+              </div> <br>
+
+              <br>
+
+              <strong>Results: </strong>
+
+              <p>The results are shown below, in the first row: on the left image the segmented image with the
+                three clusters (with the cancerous tissue pixels in bright red) and on the right only the cancerous
+                tissue cluster with the original image as background. In the second row: on the left image the the
+                ground truth data and on the right only the cancerous tissue cluster with a black background.</p>
+
+              <br>
+
+              <strong>RGB</strong>
+
+              <br>
+
+              <div class="d-flex justify-content-center"> 
+                <img src="img/portfolio/rgb8.jpg" alt="Imagen" width="400" height="350">
+              </div> <br>
+
+              <strong>HSV</strong>
+
+              <br>
+
+              <div class="d-flex justify-content-center"> 
+                <img src="img/portfolio/rgb9.jpg" alt="Imagen" width="400" height="350">
+              </div> <br>
+
+              <strong>Lab</strong>
+
+              <br>
+
+              <div class="d-flex justify-content-center"> 
+                <img src="img/portfolio/rgb10.jpg" alt="Imagen" width="400" height="350">
+              </div> <br>
+
+              <br>
+
+
+                <p>
+                  The next metric to analyze is the effectiveness of the method, we can get an idea of it by looking
+                  at the confusion matrix, which show the number of:
+                </p>
+              
+                <ul>
+                  <li><strong>True positives:</strong> Number of pixels that the algorithm identified as cancerous tissue which are actually cancerous tissue.</li>
+                  <br>
+                  <li><strong>True negatives:</strong> Number of pixels that the algorithm identified as not cancerous tissue which are actually not cancerous tissue.</li>
+                  <br>
+                  <li><strong>False positives:</strong> Number of pixels that the algorithm identified as cancerous tissue which are actually not cancerous tissue.</li>
+                  <br>
+                  <li><strong>False negatives:</strong> Number of pixels that the algorithm identified as cancerous tissue which are actually not cancerous tissue.</li>
+                </ul>
+              
+                <p>
+                  The objective is to maximize the true (positive and negative) and minimize the false (positive
+                  and negative as well). Below is an example of confusion matrix results for each of the methods
+                  for the case of a particular image. In this case it can be seen how the Lab color space is the most
+                  effective obtaining the highest number of true positives/negatives and the lowest number of
+                  false positives/negatives.
+                </p>
+
+                <br>
+
+                <div class="d-flex justify-content-center"> 
+                  <img src="img/portfolio/rgb11.jpg" alt="Imagen" width="680" height="200">
+                </div> <br>
+
+                <p>Each of the above values has been plotted in four graphs, each containing the values for each
+                of the 8 images used, making it easier to see the performance of each method. Even so, there is
+                not one method that has a superior performance to the rest.</p>
+
+                <br>
+
+                <div class="d-flex justify-content-center"> 
+                  <img src="img/portfolio/rgb12.jpg" alt="Imagen" width="680" height="350">
+                </div> <br>
+
+                <script type="text/javascript" async
+                  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+                </script>
+
+                <p>After this the MSE error has been calculated, being the following expression:</p> <br>
+
+                <p>
+                    \[
+                    MSE = \frac{1}{MN} \sum_{i=1}^{M} \sum_{j=1}^{N} \left( I(i,j) - K(i,j) \right)^2
+                    \]
+                </p>
+
+                <p><strong>Where:</strong></p>
+                <ul>
+                    <li><strong>M</strong> and <strong>N</strong> are the height and width of the image</li>
+                    <li><strong>I</strong> is the ground truth image</li>
+                    <li><strong>K</strong> is the resulting image</li>
+                    <li><strong>i</strong> is row number</li>
+                    <li><strong>j</strong> is column number</li>
+                </ul>
+              
+              <br>
+              <div class="d-flex justify-content-center"> 
+                <img src="img/portfolio/rgb13.jpg" alt="Imagen" width="680" height="350">
+              </div> <br>
+
+              <p>In this case, looking at the graph the Lab method seems to be the most accurate, with an MSE
+                around 4%, lower than RGB and HSV.
+              </p>
+
+              <p>The results for every single image of the dataset are available on the folder "Resultados" inside
+                the zip file attached to the delivery.</p>
+
+                <br>
+              
+                <strong>Discussion</strong>
+                <p>In this project, the <strong>Lab color space</strong> seems to be the most accurate, but it is actually very difficult to evaluate due to the lack of <strong>ground truth data</strong> and the limited accuracy of the ground truth data. Still, it makes sense to use <strong>Lab</strong> because it allows to set the smallest stopping threshold of the three methods evaluated.</p>
+
+                <p>With the other color spaces, such as <strong>RGB</strong> or <strong>HSV</strong>, many <strong>false positives (noise)</strong> appeared, which complicated the quality of the results. The algorithm should be tested with real carcinoma samples reacting to the <strong>alcian blue dye</strong>, and the results compared with real and reliable ground truth data, not hand-synthesized.</p>
+
+                <p>Finally, it should be tested with a <strong>large dataset</strong>, 8 images is not enough to draw conclusions about which method performs better.</p> <br>
+
+
+
+
+
+                <strong>Conclusion</strong>
+                <p>Despite the difficulties encountered, the <strong>Lab color space</strong> shows important advantages, such as its ability to reduce <strong>false positives</strong> and provide a more accurate stopping threshold. However, to more robustly evaluate this method and other comparative color spaces, it is essential to work with a <strong>larger and more representative data set</strong>.</p>
+
+                <p>I recommend testing the algorithm with <strong>real carcinoma samples</strong> reacting to the <strong>alcian blue dye</strong>, making sure that the results are compared to <strong>reliable reference data</strong>, not manually generated. This will allow to better validate the efficacy of the method and to determine which color space is really the most appropriate in a similar clinical or experimental setting.</p>
+
+                
+
+
+
+
+
+
+
+              
+
+
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/php-email-form/validate.js"></script>
+  <script src="vendor/aos/aos.js"></script>
+  <script src="vendor/typed.js/typed.umd.js"></script>
+  <script src="vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
