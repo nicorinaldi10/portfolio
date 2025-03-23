@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Projects - Robotic Gripper</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="vendor/aos/aos.css" rel="stylesheet">
+  <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="img/my-profile-img.jpeg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="/img/logo.png" alt=""> -->
+      <h1 class="sitename">Nicolás Rinaldi</h1>
+    </a>
+
+    <div class="social-links text-center">      
+      <a href="https://www.linkedin.com/in/nicolás-rinaldi-montes-150b49250" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <a href="mailto:albertonicolasrinaldi@gmail.com" class="email-link"><i class="bi bi-envelope flex-shrink-0"></i></a>
+      <a href="https://github.com/nicorinaldi10" class="github"><i class="bi bi-github"></i></a>
+      <a href="https://www.researchgate.net/profile/Nicolas-Montes-11?ev=hdr_xprf" class="rg-icon">
+        <svg class="rg-svg" width="20" height="20" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M 5 5 L 5 27 L 27 27 L 27 5 L 5 5 z M 7 7 L 25 7 L 25 25 L 7 25 L 7 7 z M 19.164062 10.001953 C 17.881062 10.001953 17.441406 10.919156 17.441406 11.535156 L 17.441406 13.169922 C 17.441406 13.999922 17.8935 14.792969 19.0625 14.792969 C 21.0245 14.790969 20.787109 13.306391 20.787109 12.275391 L 19.253906 12.275391 L 19.253906 12.816406 L 20.158203 12.816406 C 20.158203 13.621406 19.781453 14.162109 19.064453 14.162109 C 18.498453 14.162109 18.171875 13.671188 18.171875 12.992188 L 18.171875 11.634766 C 18.171875 11.005766 18.762062 10.642578 19.164062 10.642578 C 19.881062 10.642578 20.15625 11.271484 20.15625 11.271484 L 20.697266 10.90625 C 20.697266 10.90625 20.434062 10.001953 19.164062 10.001953 z M 13.583984 13.091797 C 12.678984 13.091797 11.296953 13.178906 10.001953 13.128906 L 10.001953 13.53125 C 10.781953 13.68225 11.107422 13.606281 11.107422 14.738281 L 11.107422 20.269531 C 11.107422 21.413531 10.780953 21.325563 10.001953 21.476562 L 10.001953 21.892578 C 10.378953 21.879578 11.031266 21.841797 11.697266 21.841797 C 12.326266 21.841797 13.144094 21.867578 13.496094 21.892578 L 13.496094 21.476562 C 12.490094 21.338562 12.1875 21.451531 12.1875 20.269531 L 12.1875 17.931641 C 12.5275 17.956641 12.817531 17.955078 13.269531 17.955078 C 14.124531 19.489078 14.94125 20.634781 15.40625 21.175781 C 16.24825 22.193781 17.594875 22.043578 17.921875 21.892578 L 17.921875 21.515625 C 17.418875 21.514625 16.914781 21.175437 16.550781 20.773438 C 15.934781 20.107437 15.104781 19.025641 14.425781 17.806641 C 15.557781 17.529641 16.400391 16.461297 16.400391 15.404297 C 16.400391 13.820297 15.179984 13.091797 13.583984 13.091797 z M 13.320312 13.730469 C 14.502313 13.730469 15.205078 14.346516 15.205078 15.478516 C 15.204078 16.586516 14.450359 17.326172 13.193359 17.326172 C 12.728359 17.326172 12.5145 17.314063 12.1875 17.289062 L 12.1875 13.767578 C 12.5145 13.729578 12.942312 13.730469 13.320312 13.730469 z"/>
+        </svg>
+      </a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+    
+
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Designing of a robotic gripper capable of manipulating an
+          hexagonal-base pyramid with variable parameters</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Robotic Gripper</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+        </div>
+        <div class="row gy-12">          
+          <div class="col-lg-12">
+              <ul class="text-start">
+                <li><strong>Level</strong>: Medium project (University Final Project)</li>
+                <li><strong>GitHub Repository:</strong> --</li> 
+                <li><strong>Grade</strong>: 9/10</li>
+              </ul>      
+         
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h11>What is a robotic gripper capable of manipulating a hexagonal-base pyramid
+                with variable parameters?</h11> 
+              <br>
+              <br>
+              <p>The goal of this project is to design a <strong>gripper</strong> able to grasp one kind of <strong>geometrical object</strong>, which will have <strong>variable dimensions</strong>. 
+                Basing on those parameters, the gripper must <strong>adapt</strong> to the geometry in order to perform an optimal grab. The given object is a <strong>hexagonal-based regular pyramid</strong>, 
+                whose key parameters are the <strong>side length</strong> and the <strong>height</strong> of the pyramid. The first one can go from <strong>40 to 60 mm</strong>, and the second from <strong>50 to
+                   80 mm</strong>. Additionally, the pyramid is made of <strong>steel</strong> and is <strong>hollow</strong> inside, forming a <strong>1 mm-thick shell</strong>. </p>
+
+
+                 <br>
+
+
+              <div class="d-flex justify-content-center"> 
+                <img src="img/portfolio/g_1.jpg" alt="Imagen" width="400" height="160">
+              </div> <br>
+
+              <br>
+          
+              <div class="text-start">
+                <strong>CALCULATIONS:</strong>
+            </div>
+
+          <p>In the following lines we proceed to calculate some basic magnitude of the geometrical object,
+            such as its volume, weight or its gravity centre’s threshold.
+            </p>
+
+          <p>The volume and weight will be maximum for maximum side size and hight.
+            The area of the base follows the expression:</p> <br>
+
+          <script type="text/javascript" async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+          </script>
+
+          <div class="d-flex justify-content-center"> 
+          <p>
+            \( A_{Base} = \frac{6 \cdot d \cdot \left( \frac{\sqrt{3}}{2} \cdot d \right)}{2} \)
+          </p>
+          </div> <br>
+
+          <p>And in the same way, we can get the formula for the pyramid’s volume:</p> <br>
+
+          <script type="text/javascript" async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+          </script>
+
+          <div class="d-flex justify-content-center"> 
+          <p>
+            \( V_{pyramid} = \frac{A_{base} \cdot h}{3} \)
+          </p>
+          </div> <br>
+
+          <p>The already sectioned sketches of the object, show the disposition of the figure
+            comparing the two shells, we can extract the same relations between them:</p> <br>
+
+            <div class="d-flex justify-content-center"> 
+              <img src="img/portfolio/g_2.jpg" alt="Imagen" width="350" height="200">
+            </div> <br>
+
+          <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+</head>
+<body>
+  <div class="d-flex justify-content-center">
+    <p> \( d = \) external shell side size, &emsp; \( d1 = \) internal shell side size </p></div>
+
+    <div class="d-flex justify-content-center">
+    <p> \( h = \) external shell height, &emsp; \( h1 = \) internal shell height </p></div>
+
+    <div class="d-flex justify-content-center">
+    <p> \( d1 = d - 1.155, \quad h1 = h - 2.836 \) </p></div>
+
+    <div class="d-flex justify-content-center">
+    <p> \( r_i = \frac{\sqrt{3}}{2} \cdot d \) &emsp; \( r_u = d \) </p></div>
+
+    <div class="d-flex justify-content-center">
+    <p> \( Pyramid_{volume} = d \cdot r_i \cdot h \) </p></div>
+
+    <br>
+
+    <p><strong>Combining all the expressions we can obtain the value of the volume in mm³:</strong></p> <br>
+
+    <p>
+        \[
+        EffectiveVolume = \frac{(6 \cdot d \cdot \frac{\sqrt{3}}{2} \cdot h) - (6 \cdot (d - 1.155) \cdot \frac{\sqrt{3}(d - 1.155)}{2} \cdot (h - 2.836))}{3}
+        \]
+    </p> <br>
+
+    <div class="d-flex justify-content-center">
+    <p> \( EffectiveVolume = 36029.414 mm^3 \) </p></div>
+
+    <br>
+
+    <p>
+        \[
+        m_{max} = 36029.414 [mm^3] \cdot 7.85 \cdot 10^{-6} \frac{kg}{mm^3} = 0.2828 Kg
+        \]
+    </p> <br>
+
+    <p><strong>Calculation of gravity centre.</strong> If we divide the pyramid in two axes: vertical (y) and horizontal (x), we can calculate \( \alpha \), \( x_{gc} \) and \( y_{gc} \):</p>
+
+    <div class="d-flex justify-content-center"><p> \( x_{gc} = \frac{3}{4} \cdot h \cdot \tan(\alpha) \) </p></div>
+    <div class="d-flex justify-content-center"><p> \( \alpha = arctan\left( \frac{\sqrt{3}}{2} \cdot \frac{d}{h} \right) \) </p></div>
+    <div class="d-flex justify-content-center"><p> \( y_{gc} = \frac{3}{4} \cdot h \) </p></div> <br>
+
+    <p><strong>We can calculate the threshold between the two pairs of values:</strong></p>
+
+    <div class="d-flex justify-content-center"><p> \( h_{max} = 80, \quad d_{max} = 60 \) </p></div>
+
+    <p><strong>Then:</strong></p>
+
+    <div class="d-flex justify-content-center"><p> \( \alpha_1 = arctan\left( \frac{\sqrt{3}}{2} \cdot \frac{60}{80} \right) = 36.67° \) </p></div>
+
+    <div class="d-flex justify-content-center"><p> \( x_{gc_{max}} = \frac{3}{4} \cdot 80 \cdot \tan(36.67) = 38.97 mm \) </p></div>
+
+    <div class="d-flex justify-content-center"><p> \( y_{gc_{max}} = \frac{3}{4} \cdot 80 = 60 mm \) </p></div>
+
+
+    <p>We do the same with the other values:</p>
+
+    <div class="d-flex justify-content-center"><p class="equation"> \( h_{min} = 50, \quad d_{min} = 40 \) </p></div>
+
+    <div class="d-flex justify-content-center"><p class="equation"> \( \alpha_2 = arctan\left( \frac{\sqrt{3}}{2} \cdot \frac{40}{50} \right) = 38.57^\circ \) </p></div>
+
+    <div class="d-flex justify-content-center"><p class="equation"> \( x_{gc_{min}} = \frac{3}{4} \cdot 50 \cdot \tan(38.57) = 25.98mm \) </p></div>
+
+    <div class="d-flex justify-content-center"><p class="equation"> \( y_{gc_{min}} = \frac{3}{4} \cdot 50 = 37.5mm \) </p></div>
+    
+    <br>
+
+    <div class="text-start">
+      <strong>KINEMATIC CHAIN:</strong>
+  </div>
+
+    <p>In the figure below, we can see the <strong>kinematic chain</strong> for one <strong>finger</strong> of the <strong>gripper</strong>, all of them are fed by the same <strong>motor</strong>. This chain should be multiplied by <strong>three</strong>, making up the whole gripper by forming a <strong>three-finger symmetrical structure</strong> with a <strong>120-degree gap</strong> between each one.</p>
+
+    <p>The <strong>angular threshold</strong> for link number <strong>6</strong> is <strong>-43.89, -66.59</strong>, measuring from the <strong>vertical negative axis</strong> starting from that link.</p> <br>
+
+    <div class="d-flex justify-content-center"> 
+      <img src="img/portfolio/g_3.jpg" alt="Imagen" width="250" height="250">
+    </div> <br>
+
+    <div class="text-start">
+      <strong>FORCES:</strong>
+  </div>
+    <p>In order to correctly grasp the object, it is necessary to calculate the suction force of each
+      suction cup. We are going to pre-set the maximum acceleration in 5m/s^2, it is possible to
+      obtain that force by the following expressions:
+      </p>
+
+      <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+      body {
+          text-align: center;
+          font-family: Arial, sans-serif;
+      }
+      .equation {
+          display: block;
+          margin: 10px auto;
+      }
+  </style>
+</head>
+<body>
+
+  <div class="d-flex justify-content-center">
+      <p class="equation"> 
+          \( F_g = m \cdot (g \cdot a) \cdot s \cdot \left( cos\alpha + \frac{sin\alpha}{\mu} \right) 
+          = 0.2828 \cdot (9.8 + 5) \cdot 2 \cdot (cos(43.89) + \frac{sin(43.89)}{0.5}) \)
+      </p>
+  </div>
+
+  <div class="d-flex justify-content-center">
+      <p class="equation"> \( F_g = 17.64N \) </p>
+  </div>
+
+  <div class="d-flex justify-content-center">
+      <p class="equation"> \( k = \left( 1 + \frac{r}{R} \right) = 1 + \frac{11.25}{11} = 2.02 \) </p>
+  </div>
+
+  <div class="d-flex justify-content-center">
+      <p class="equation"> \( F_{r1} = F_g \cdot k \) </p>
+  </div>
+
+  <div class="d-flex justify-content-center">
+      <p class="equation"> \( F_{r1} = 17.64 \cdot 2.02 = 35.68N \) </p>
+  </div>
+
+  <br>
+
+  <p><strong>Fg</strong> = force in the gravity centre, <strong>m</strong> = mass of the object, <strong>g</strong> = acceleration of gravity, 
+      <strong>α</strong> = max acceleration of the system, <strong>s</strong> = security factor, <strong>μ</strong> = friction coefficient, 
+      <strong>k</strong> = eccentricity coefficient at force onset, <strong>r</strong> = distance between prehension and object centre, 
+      <strong>R</strong> = external radius of suction cup, <strong>Fr1</strong> = resultant force 1.</p>
+
+<br>
+
+  <p>In addition to this force, it is necessary to take into account the one due to the circular movement (Centripetal force).</p>
+
+  <div class="d-flex justify-content-center">
+      <p class="equation"> \( F_C = m \cdot w^2 \cdot r \) </p>
+  </div>
+
+  <div class="d-flex justify-content-center">
+      <p class="equation"> \( F_C = 0.462N \) </p>
+  </div>
+
+  <div class="d-flex justify-content-center">
+      <p class="equation"> \( F_s = F_{r1} + F_C = 36.142N \) </p>
+  </div>
+
+  <div class="d-flex justify-content-center">
+      <p class="equation"> \( F_f = F_s / 3+ = 12.05N \) </p>
+  </div>
+
+  <br>
+
+  <p>The chosen value is going to be \( F_f = 13 N \).</p>
+
+  <p>The minimum pressure for creating the vacuum would be:</p>
+
+  <div class="d-flex justify-content-center">
+      <p class="equation"> 
+          \( P = \frac{F_s}{A_{rectotal}} = \frac{3 \cdot 13}{3 \cdot \pi \cdot 11^2} = 3.42 \cdot 10^{-2} MPa \)
+      </p>
+  </div>
+
+</body>
+
+
+<script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .equation {
+            display: block;
+            margin: 10px auto;
+        }
+        .text-start {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+  <br>
+
+    <p class="text-start">It is needed to calculate the required force to scroll the rails, overcoming the friction force:</p>
+
+    <div class="d-flex justify-content-center">
+        <p class="equation"> \( V_T = V_{H2} + V_{H3} + V_V + V_L \) </p>
+    </div>
+
+    <br>
+
+    <p class="text-start">We can easily calculate the volume of each part using Inventor’s “IProperties” function.</p>
+
+    <div class="d-flex justify-content-center">
+        <p class="equation"> \( V_T = 1988.322 + 1331.424 + 1603.222 + 390.276 = 5323.244mm^3 \) </p>
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <p class="equation"> \( m_f = 5323.244 mm^3 \cdot 2.7 \times 10^{-6} \frac{kg}{mm^2} = 0.01437 kg \) </p>
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <p class="equation"> \( m = m_f + \frac{1}{3} m_{py} + m_{sc} = 0.01437 + 0.0943 + 0.00323 = 0.1119 kg \) </p>
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <p class="equation"> \( F_r = m \cdot g \cdot \mu_{al} = 0.1119 \cdot 9.8 \cdot 1.7 = 1.864N \approx 2N \) </p>
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <p class="equation"> \( F_t = 3 \cdot F_r = 6N \) </p>
+    </div>
+
+    <p class="text-start"><strong> \( V_{H2} \) </strong> = volume of link nº2 of the horizontal finger, 
+       <strong> \( V_{H3} \) </strong> = volume of link nº3 of the horizontal finger, 
+       <strong> \( V_V \) </strong> = volume of link nº1 of the vertical finger, 
+       <strong> \( V_L \) </strong> = volume of the latch link, 
+       <strong> \( m \) </strong> = total mass, 
+       <strong> \( m_f \) </strong> = finger’s mass, 
+       <strong> \( m_{sc} \) </strong> = suction cup’s mass, 
+       <strong> \( m_{py} \) </strong> = pyramid’s mass, 
+       <strong> \( g \) </strong> = gravity acceleration, 
+       <strong> \( \mu_{al} \) </strong> = friction coefficient for aluminium, 
+       <strong> \( F_r \) </strong> = friction force, 
+       <strong> \( F_t \) </strong> = total force, 
+       <strong> \( V_T \) </strong> = total volume of the gripper’s fingers.
+    </p>
+
+    <p class="text-start">For implementing the motion chain, it is necessary to calculate the distance between the executor and the vertical finger.</p>
+
+</body>
+
+<br>
+
+<div class="d-flex justify-content-center"> 
+  <img src="img/portfolio/g_4.jpg" alt="Imagen" width="350" height="150">
+</div> <br>
+
+<br>
+
+<div class="text-start">
+  <strong>SOLUTION AND FITTING PARAMETERS FOR ORIENTATION:</strong>
+</div>
+
+<p>The solution proposed is a three-aluminium-claw gripper (one claw per every 120º), each of
+which is composed by two fingers, that are responsibles of horizontal movement respectively.
+The vertical fingers are equipped with a suction cup, in charge of secure the pyramid’s
+movement. For this reason, the first measure to be obtained is the maximum external radius
+of the suction cup, in order to fit this device perfectly with the pyramid. </p>
+
+<p>We are going to assume the smallest side face area: dmin = 40mm, hmin = 50mm
+For an optimal grip, the suction cup should grasp the object by its gravity centre, so it is
+necessary to line up the centre point of the suction cup with the one of the pyramid’s face (the
+purple point in the figure below).</p>
+<p>By applying Thales and Pythagoras theorems, we can obtain values x, h’ and d’ as follows:</p>
+
+<br>
+
+<div class="d-flex justify-content-center"> 
+  <img src="img/portfolio/g_5.jpg" alt="Imagen" width="200" height="200">
+</div> <br>
+
+<p>It is necessary to calculate the maximum radium of
+  the inscribed internal circle, but first we need to
+  obtain the angle “b/2” and then get the value of angle
+  “a”</p>
+
+  <div class="d-flex justify-content-center"> 
+    <img src="img/portfolio/g_6.jpg" alt="Imagen" width="350" height="200">
+  </div> <br>
+
+
+<p>It is very important to take into account that the
+  maximum suction cup’s radium must be under
+  14.25mm. Otherwise, the cup could be wider than the
+  pyramid’s face, what would generate a problem when
+  generating the vacuum.
+  </p>
+  <br>
+
+  <p>The next point to discuss is the suction cup orientation’s threshold, which depends on the
+    generatrix angle of the pyramid (parameter “α” )</p>
+
+    <br>
+    <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+    .equation {
+        display: block;
+        margin: 10px auto;
+    }
+    .text-start {
+        text-align: left;
+    }
+</style>
+</head>
+<body>
+
+<div class="d-flex justify-content-center">
+    <p class="equation"> 
+        \( \alpha = arctan(arg) = arctan\left(\frac{\sqrt{3}}{2} \cdot \frac{d}{h} \right) \)
+    </p>
+</div>
+
+<div class="d-flex justify-content-center">
+    <p class="equation">
+        \( arg \to 0; \quad \alpha \to 0 \)
+    </p>
+</div>
+
+<div class="d-flex justify-content-center">
+    <p class="equation">
+        \( arg \to \infty; \quad \alpha \to 90 \)
+    </p>
+</div>
+<br>
+<p class="text-start"><strong>The minimum angle will be reached when \( h_{max} = 60mm \) and \( d_{min} = 40mm \):</strong></p>
+<br>
+
+<div class="d-flex justify-content-center">
+    <p class="equation">
+        \( \alpha_{min} = arctan\left( \frac{\sqrt{3}}{2} \cdot \frac{40}{80} \right) = 23.41deg \)
+    </p>
+</div>
+<br>
+<p class="text-start"><strong>The maximum angle will be reached when \( h_{min} = 50mm \) and \( d_{max} = 60mm \):</strong></p>
+<br>
+<div class="d-flex justify-content-center">
+    <p class="equation">
+        \( \alpha_{max} = arctan\left( \frac{\sqrt{3}}{2} \cdot \frac{60}{50} \right) = 46.11deg \)
+    </p>
+</div>
+<br>
+<p class="text-start">
+    The proposed behaviour of the gripper to correctly perform the task is to auto adjust the suction cup’s orientation, 
+    trying to dispose the faces of the cup and the pyramid in a parallel way between them.
+</p>
+
+<p>The proposed behaviour of the gripper to correctly perform the task is to auto adjust the
+  suction cup’s orientation, trying to dispose the faces of the cup and the pyramid in a parallel
+  way between them.</p>
+
+  <p>The next step is to select an appropriate suction cup for performing the job, in this case the
+    selected device is VMECA’s VF20-N-18F suction cup.</p>
+
+  <p> This is made by a Nitrile (NBR) flat suction cup with an effective radium of 11mm, fitted by a
+    female G1/8 thread. It has a weight of 3.23 grams, and its dimensions (in millimetres).</p>
+
+  <div class="d-flex justify-content-center"> 
+   <img src="img/portfolio/g_7.jpg" alt="Imagen" width="350" height="200">
+  </div> <br>
+
+  <p>Another important parameter to take into account when calculating the movement is the
+    suction force which can be applied by each suction cup. That force has to do with the
+    movement direction, as is showed in the following table:</p>
+  
+    <div class="d-flex justify-content-center"> 
+      <img src="img/portfolio/g_8.jpg" alt="Imagen" width="350" height="50">
+     </div> <br>
+
+</body>
+
+<p>Once the geometry is almost completely studied, we proceed to design the gripper hardware.</p>
+
+<p><strong>For correctly performing the auto adjust</strong> it is necessary to set a hinge in a piece to link the suction cup with the gripper’s finger (see the hinge’s centre in green, <em>Figure below</em>).</p>
+
+
+<div class="d-flex justify-content-center"> 
+  <img src="img/portfolio/g_9.jpg" alt="Imagen" width="200" height="200">
+ </div> <br>
+
+<p>To line up the central point of the suction cup with the last vertical finger’s edge (whose width is 5mm), it is necessary to calculate the length of the latch by the following relation:</p>
+
+<div class="d-flex justify-content-center"><p>\( \sin(43.89) = \frac{5}{r} \Rightarrow r = 7.212 \, mm \)</p></div>
+
+<p>As the vertical fingers are not mobile, we are going to pick all the pyramids from the same point. In this case the chosen point is the average of the gravity centre’s height:</p>
+
+<div class="d-flex justify-content-center"><p>\( y_{av} = \frac{60 + 37.5}{2} = 48.75 \, mm \)</p></div>
+
+<br>
+
+<p>For obtaining the parameter “<em>v</em>” that is necessary for the vertical finger, we can use the same sketch in the figure below. With the same angle, but now the new parameter “<em>r</em>” is the length of the latch + the length of the suction cup:</p>
+
+<div class="d-flex justify-content-center"><p>\( v = r \cdot \cos(43.89) = (16 + 7.212) = 16.728 \, mm \)</p></div>
+
+<br>
+
+<p>Once “<em>v</em>” is calculated, the length of the vertical finger (“<em>Lv</em>”) is easily obtained by:</p>
+
+<div class="d-flex justify-content-center"><p>\( Lv = 48.75 - 16.728 = 32.02 \, mm \)</p></div>
+
+<br>
+
+<p>The gripper “skeleton” will have the disposition shown in the figure below. As it was said before, the movement is implemented by three rail-based system fingers, that are designed to operate inside the gravity centre’s threshold.</p>
+
+<p><strong>The expected behaviour for the system is the following sequence:</strong></p>
+
+<style>
+  .numbered-steps {
+    list-style-position: outside;
+    padding-left: 1.5em;
+  }
+
+  .numbered-steps li {
+    margin-bottom: 1em;
+    text-align: justify;
+  }
+</style>
+
+<ol class="numbered-steps">
+  <li>
+    Firstly, the horizontal fingers will expand until they reach the further position 
+    possible from the centre of the grip.
+  </li>
+  <li>
+    The second movement (done by the robot) will set the gripper in the initial position;
+    putting the centre of the gripper in the top vertex of the pyramid.
+  </li>
+  <li>
+    When this position is reached, the horizontal fingers will contract, and the suction 
+    device will slowly spin about the hinge until the system detects that the suction cup’s
+    surface is completely parallel to the pyramid’s face.
+  </li>
+</ol>
+
+<br>
+
+<div class="d-flex justify-content-center"> 
+  <img src="img/portfolio/g_10.jpg" alt="Imagen" width="550" height="400">
+ </div> <br>
+
+
+<p><strong>BLUEPRINTS:</strong></p>
+
+<p>For the following blueprints, all rails must fit, they have been emphasized in red colour in first
+  sketch “Vertical finger (scale 5 : 1). Link 1:”.
+  It is important to remark that some pieces have to be crafted more than one time (see in
+  assembly table.).</p>
+
+
+  <div class="d-flex justify-content-center"> 
+    <img src="img/portfolio/g_11.jpg" alt="Imagen" width="700" height="450">
+   </div> <br>
+
+   <div class="d-flex justify-content-center"> 
+    <img src="img/portfolio/g_12.jpg" alt="Imagen" width="700" height="450">
+   </div> <br>
+
+   <div class="d-flex justify-content-center"> 
+    <img src="img/portfolio/g_13.jpg" alt="Imagen" width="700" height="450">
+   </div> <br>
+
+   <div class="d-flex justify-content-center"> 
+    <img src="img/portfolio/g_14.jpg" alt="Imagen" width="700" height="450">
+   </div> <br>
+
+   <div class="d-flex justify-content-center"> 
+    <img src="img/portfolio/g_15.jpg" alt="Imagen" width="700" height="450">
+   </div> <br>
+
+   <div class="d-flex justify-content-center"> 
+    <img src="img/portfolio/g_16.jpg" alt="Imagen" width="700" height="450">
+   </div> <br>
+
+   <div class="d-flex justify-content-center"> 
+    <img src="img/portfolio/g_17.jpg" alt="Imagen" width="700" height="450">
+   </div> <br>
+
+   <div class="d-flex justify-content-center"> 
+    <img src="img/portfolio/g_18.jpg" alt="Imagen" width="700" height="450">
+   </div> <br>
+
+
+   <p><strong>ASSEMBLY:</strong></p>
+
+   <p>Below it is showed the assembly drawing. After it, is shown the pneumatic system connections
+    for the motor.
+    Which activates and deactivates the solenoids depending on the situation of the proximity
+    sensor attached to the suction cup. We can see the cycle for opening and closing the gripper. Additionally, there is a sketch, of how should be the vacuum control system</p>
+
+   <div class="d-flex justify-content-center"> 
+    <img src="img/portfolio/g_19.jpg" alt="Imagen" width="700" height="450">
+   </div> <br>
+
+   <div class="d-flex justify-content-center"> 
+    <img src="img/portfolio/g_20.jpg" alt="Imagen" width="350" height="225">
+   </div> <br>
+
+   <div class="d-flex justify-content-center"> 
+    <img src="img/portfolio/g_21.jpg" alt="Imagen" width="700" height="250">
+   </div> <br>
+
+   <div class="d-flex justify-content-center"> 
+    <img src="img/portfolio/g_22.jpg" alt="Imagen" width="700" height="250">
+   </div> <br>
+
+   <div class="d-flex justify-content-center"> 
+    <img src="img/portfolio/g_23.jpg" alt="Imagen" width="350" height="225">
+   </div> <br>
+ 
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/php-email-form/validate.js"></script>
+  <script src="vendor/aos/aos.js"></script>
+  <script src="vendor/typed.js/typed.umd.js"></script>
+  <script src="vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
